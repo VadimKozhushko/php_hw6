@@ -1,8 +1,7 @@
 <?php
-//session_start();
-//unset($_SESSION['username']);
-$controller = $_GET['controller'] ?? 'index';
 
+
+$controller = $_GET['controller'] ?? 'home';
 $routes = require 'routes.php';
 
-require_once $routes[$controller] ?? Die("404");
+require_once $routes[$controller];
