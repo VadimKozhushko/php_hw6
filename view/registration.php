@@ -26,7 +26,7 @@
     <div class="container text-center">
         <div class="row">
             <form method="post" class="sign-in-form mt-5 mt-md-5 col-lg-4 col-md-5 col-sm-8">
-                <h3>Авторизация</h3>
+                <h3>Регистрация</h3>
                 <div class="alert alert-danger <?= $error === null ? 'visually-hidden' : '' ?>">
                     <?= $error ?>
                 </div>
@@ -34,7 +34,7 @@
                 <input type="text" id="username" name="username" class="form-control mt-3" placeholder="Имя пользователя" required="" autofocus="">
                 <label for="password" class="visually-hidden">Пароль</label>
                 <input type="password" id="password" name="password" class="form-control" placeholder="Пароль" required="">
-                <button class="w-75 btn btn-lg btn-primary mt-1" type="submit">Войти</button>
+                <button class="w-75 btn btn-lg btn-primary mt-1" type="submit">Зарегистрироваться</button>
                 <div class="mt-3">
                     <a href="/">Назад</a>
                 </div>
